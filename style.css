@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
   background-color: #333;
   color: #222;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .container {
@@ -20,7 +20,6 @@ body {
   transform-origin: top left;
   transition: transform 0.5s linear;
   width: 100vw;
-  /* min-height: 100vh; */
   padding: 50px;
 }
 
