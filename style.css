@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
   background-color: #333;
   color: #222;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .container {
@@ -20,17 +20,23 @@ body {
   transform-origin: top left;
   transition: transform 0.5s linear;
   width: 100vw;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 50px;
 }
 
+/* !when the container has show-nav, the conatiner should rotate 20deg to the right allowing the hidden menu to show from the left*/
 .container.show-nav {
   transform: rotate(-20deg);
 }
 
+/* !when the container has show-nav, the icons and menu should show with a 2sec delay */
 .container.show-nav + nav li {
     transform: translateX(0);
-    transition-delay: 0.3s;
+    transition-delay: 0.2s;
+}
+
+.container.show-nav .circle {
+     transform: rotate(-70deg);
 }
 
 .circle-container {
