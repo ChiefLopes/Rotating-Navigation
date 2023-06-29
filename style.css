@@ -30,12 +30,12 @@ body {
 
 /* !when the container has show-nav, the icons and menu should show with a 2sec delay */
 .container.show-nav + nav li {
-    transform: translateX(0);
-    transition-delay: 0.2s;
+  transform: translateX(0);
+  transition-delay: 0.2s;
 }
 
 .container.show-nav .circle {
-     transform: rotate(-70deg);
+  transform: rotate(-70deg);
 }
 
 .circle-container {
@@ -63,6 +63,12 @@ body {
   border: 0;
   font-size: 26px;
   color: #fff;
+}
+
+.circle button:hover {
+  font-size: 30px;
+  color: #0c8b2c;
+  transition: font-size 0.3s, color 0.3s ease-in;
 }
 
 .circle button:focus {
@@ -96,7 +102,7 @@ nav ul li {
   color: #ededfd;
   margin: 10px 0;
   font-family: "Roboto", sans-serif;
-  font-size: 15px ;
+  font-size: 15px;
   transform: translateX(-100%);
   transition: transform 0.5s ease-in;
 }
@@ -104,12 +110,11 @@ nav ul li {
 nav ul li i {
   font-size: 15px;
   margin: 7px;
-  
 }
 
 nav ul li i:hover {
-    font-size: 20px;
-    transition: font-size 0.3s ease-out;
+  font-size: 20px;
+  transition: font-size 0.3s ease-out;
 }
 /* !selecting the second and third elements in the list under the ul of nav using plus (+) */
 /* nav ul li + li {
@@ -124,12 +129,12 @@ nav ul li + li + li {
 
 nav ul li:nth-child(2) {
   margin-left: 15px;
-    transform: translateX(-150%);
+  transform: translateX(-150%);
 }
 
 nav ul li:nth-child(3) {
   margin-left: 20px;
-    transform: translateX(-200%);
+  transform: translateX(-200%);
 }
 
 .Article img {
@@ -156,4 +161,3 @@ nav ul li:nth-child(3) {
   color: #333;
   line-height: 1.5;
 }
-
