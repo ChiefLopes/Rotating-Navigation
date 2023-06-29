@@ -1,7 +1,7 @@
-// const container = document.querySelector(".container");
+const container = document.querySelector(".container");
 
-// window.addEventListener("load", shownav)
+window.addEventListener("load", shownav)
 
-// function shownav() {
-//    container.classList.add("show-nav")
-// }
+function shownav() {
+   container.classList.add("show-nav")
+}
